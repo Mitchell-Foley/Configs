@@ -1,16 +1,73 @@
 [global_config]
-  window_state = fullscreen
+  tab_position = bottom
+  title_transmit_bg_color = "#3686d9"
+  window_state = maximise
 [keybindings]
 [layouts]
   [[default]]
-    [[[child1]]]
-      parent = window0
-      type = Terminal
-    [[[window0]]]
+    [[[pane]]]
+      maximised = true
+      parent = window
+      type = Vpaned
+    [[[window]]]
       parent = ""
       type = Window
+  [[Split1]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = dc8f54fb-6118-4175-a8da-ab2f0176015e
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:24
+      size = 1366, 744
+      title = mitch@mitch-pc: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 680
+      ratio = 0.5
+      type = HPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 73086875-3e00-43e0-9ae3-a5ac9e324bcd
+    [[[terminal3]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = dc8f54fb-6118-4175-a8da-ab2f0176015e
+  [[foo]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 3813ca40-e92f-42ab-a45a-acc36ca64460
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 0:24
+      size = 642, 378
+      title = mitch@mitch-pc: ~
+      type = Window
+    [[[terminal1]]]
+      order = 0
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = 3813ca40-e92f-42ab-a45a-acc36ca64460
 [plugins]
 [profiles]
   [[default]]
+    allow_bold = False
+    background_color = "#2b303b"
     background_image = None
+    copy_on_selection = True
+    cursor_color = "#c0c5ce"
+    foreground_color = "#c0c5ce"
+    palette = "#2b303b:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#c0c5ce:#65737e:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#eff1f5"
     scrollback_infinite = True
