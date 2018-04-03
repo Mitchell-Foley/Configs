@@ -68,9 +68,3 @@ call plug#end()
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 call plug#end()
-
-call plug#begin('~/.vim/plugged')
-Plug 'wincent/command-t'
-call plug#end()
-
-colorscheme base16-ocean
